@@ -1,0 +1,61 @@
+@media only screen and (width: 820px) {
+  .top-nav {
+    display: none;
+  }
+  * {
+    font-family: "Lora", serif;
+    color: white;
+  }
+  .text-container2 h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .text-container2 h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .text-container2 .objectives {
+    width: 80%;
+  }
+  .objectives {
+    font-size: 23px;
+  }
+  .skills-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-item {
+    position: absolute;
+    right: -345px;
+  }
+  .arrow-prev {
+    left: 400px;
+    position: absolute;
+    top: 340px;
+    transform: translateY(-50%) rotate(135deg);
+  }
+  .arrow-next {
+    right: 400px;
+    position: absolute;
+    top: 340px;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  h2,
+  h5 {
+    font-size: 30px;
+  }
+  .span2,
+  .span3 {
+    font-size: 140px;
+  }
+}

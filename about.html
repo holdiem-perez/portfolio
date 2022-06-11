@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobileView.css" />
+    <link rel="stylesheet" href="tabletView.css" />
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,11 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
       rel="stylesheet"
     />
+
     <title>Perez, John Eduard</title>
   </head>
   <body>
     <div class="main">
-      <nav>
+      <nav class="navigation">
         <ul class="nav-bar">
           <li class="nav-bar_item"><a href="index.html">home</a></li>
           <li class="nav-bar_item"><a href="about.html">about</a></li>
@@ -24,6 +27,18 @@
           <li class="nav-bar_item"><a href="contact.html">contact</a></li>
         </ul>
       </nav>
+      <section class="top-nav">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a class="menu-container" href="index.html">Home</a></li>
+          <li><a class="menu-container" href="about.html">About</a></li>
+          <li><a class="menu-container" href="project.html">Project</a></li>
+          <li><a class="menu-container" href="contact.html">Contact</a></li>
+        </ul>
+      </section>
       <div>
         <div class="article-container2">
           <div class="image-container2">
@@ -34,10 +49,9 @@
             <h4>UI UX Designer & Front-End Developer</h4>
             <div class="objectives">
               I'm a senior at STI College Global City, taking Bachelor of
-              Science in Information Technology, fueled by my passion in
-              Designing, Web Development, and Network Technology. I have the
-              eagerness to learn different knowledge and explore new
-              experiences.
+              Science in Information Technology, fueled by my passion in Web and
+              Network Designing. I have the eagerness to learn different
+              knowledge and explore new experiences.
             </div>
             <div class="skills-container">
               <h5 class="my-skills">My Skills</h5>

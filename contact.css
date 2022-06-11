@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  box-sizing: border-box;
   font-family: "Lora", serif;
 }
 
@@ -16,6 +16,7 @@
 nav {
   width: 100%;
   background-color: #02393e;
+  background: linear-gradient(to left, #045b62, #02393e);
   display: flex;
   justify-content: space-between;
 }
@@ -139,6 +140,7 @@ nav .nav-bar .nav-bar_item a:hover:after {
 }
 
 .contact {
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -165,6 +167,10 @@ nav .nav-bar .nav-bar_item a:hover:after {
 .dl {
   width: 40px;
   height: 40px;
+}
+h2,
+h5 {
+  font-size: 20px;
 }
 
 .resume:hover {

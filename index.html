@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mobileView.css">
+    <link rel="stylesheet" href="tabletView.css">
     <title>Perez, John Eduard</title>
   </head>
   <body>
     <div class="main">
-      <nav>
+      <nav class="navigation">
         <ul class="nav-bar">
           <li class="nav-bar_item"><a href="index.html">home</a></li>
           <li class="nav-bar_item"><a href="about.html">about</a></li>
@@ -20,12 +22,24 @@
           <li class="nav-bar_item"><a href="contact.html">contact</a></li>
         </ul>
       </nav>
+      <section class="top-nav">
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a class="menu-container" href="index.html">Home</a></li>
+        <li><a class="menu-container" href="about.html">About</a></li>
+        <li><a class="menu-container" href="project.html">Project</a></li>
+        <li><a class="menu-container" href="contact.html">Contact</a></li>
+      </ul>
+      </section>
       <div>
         <div class="article-container">
             <div class="text-container">
               <h1>HELLO<span class="span">;</span></h1>
-              <h2>I am</h2>
-              <h2>Eduard</h2>
+              <h2><span class="span2">I am</span></h2>
+              <h2><span class="span3">Eduard</span></h2>
               <p class="paragraph-container">I build value through ideas.</p>
             </div>
           </div>

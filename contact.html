@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="mobileView.css" />
+    <link rel="stylesheet" href="tabletView.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +17,7 @@
   </head>
   <body>
     <div class="main">
-      <nav>
+      <nav class="navigation">
         <ul class="nav-bar">
           <li class="nav-bar_item">
             <a href="index.html">home</a>
@@ -26,6 +28,18 @@
         </ul>
       </nav>
     </div>
+    <section class="top-nav">
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a class="menu-container" href="index.html">Home</a></li>
+        <li><a class="menu-container" href="about.html">About</a></li>
+        <li><a class="menu-container" href="project.html">Project</a></li>
+        <li><a class="menu-container" href="contact.html">Contact</a></li>
+      </ul>
+    </section>
     <div class="article-container4">
       <div>
         <div class="contact-container">
@@ -49,8 +63,8 @@
           </div>
           <div class="contact">
             <h2>Get in touch with me!</h2>
-            <h3>ejayperez1599@gmail.com</h3>
-            <h3>+63966-910-5209</h3>
+            <h5>ejayperez1599@gmail.com</h5>
+            <h5>+63966-910-5209</h5>
             <a
               class="link"
               href="./resume/CV-Perez-John-Eduard-H..pdf"

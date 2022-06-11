@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobileView.css" />
+    <link rel="stylesheet" href="tabletView.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +17,7 @@
   </head>
   <body>
     <div class="main">
-      <nav>
+      <nav class="navigation">
         <ul class="nav-bar">
           <li class="nav-bar_item"><a href="index.html">home</a></li>
           <li class="nav-bar_item"><a href="about.html">about</a></li>
@@ -24,7 +26,19 @@
         </ul>
       </nav>
     </div>
-    <h1>My Simple Projects</h1>
+    <section class="top-nav">
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a class="menu-container" href="index.html">Home</a></li>
+        <li><a class="menu-container" href="about.html">About</a></li>
+        <li><a class="menu-container" href="project.html">Project</a></li>
+        <li><a class="menu-container" href="contact.html">Contact</a></li>
+      </ul>
+    </section>
+    <h1 class="titles">My Simple Projects</h1>
     <div id="carousel-wrapper" class="carousel-view">
       <span id="item-1"></span>
       <span id="item-2"></span>
@@ -32,29 +46,59 @@
       <span id="item-4"></span>
       <span id="item-5"></span>
       <div class="carousel-item item-1">
-        <a href="#item-5" class="arrow-prev arrow"></a>
-        <img class="size1" src="./LOGO/LOGINPAGE.PNG" alt="" />
-        <a href="#item-2" class="arrow-next arrow"></a>
+        <div class="previous-arrow">
+          <a href="#item-5" class="arrow-prev arrow"></a>
+        </div>
+        <div class="current-image">
+          <img class="size1" src="./LOGO/CISCO.PNG" alt="" />
+        </div>
+        <div class="next-arrow">
+          <a href="#item-2" class="arrow-next arrow"></a>
+        </div>
       </div>
       <div class="carousel-item item-2">
-        <a href="#item-1" class="arrow-prev arrow"></a>
-        <img class="size2" src="./LOGO/CALENDAR.PNG" alt="" />
-        <a href="#item-3" class="arrow-next arrow"></a>
+        <div class="previous-arrow">
+          <a href="#item-1" class="arrow-prev arrow"></a>
+        </div>
+        <div class="current-image">
+          <img class="size2" src="./LOGO/PAYROLL.jpg" alt="" />
+        </div>
+        <div class="next-arrow">
+          <a href="#item-3" class="arrow-next arrow"></a>
+        </div>
       </div>
       <div class="carousel-item item-3">
-        <a href="#item-2" class="arrow-prev arrow"></a>
-        <img class="size3" src="./LOGO/CALCU.PNG" alt="" />
-        <a href="#item-4" class="arrow-next arrow"></a>
+        <div class="previous-arrow">
+          <a href="#item-2" class="arrow-prev arrow"></a>
+        </div>
+        <div class="current-image">
+          <img class="size3" src="./LOGO/TURTLE 1.png" alt="" />
+        </div>
+        <div class="next-arrow">
+          <a href="#item-4" class="arrow-next arrow"></a>
+        </div>
       </div>
       <div class="carousel-item item-4">
-        <a href="#item-3" class="arrow-prev arrow"></a>
-        <img class="size4" src="./LOGO/BLACKLABEL.PNG" alt="" />
-        <a href="#item-5" class="arrow-next arrow"></a>
+        <div class="previous-arrow">
+          <a href="#item-3" class="arrow-prev arrow"></a>
+        </div>
+        <div class="current-image">
+          <img class="size4" src="./LOGO/TURTLE 2.png" alt="" />
+        </div>
+        <div class="next-arrow">
+          <a href="#item-5" class="arrow-next arrow"></a>
+        </div>
       </div>
       <div class="carousel-item item-5">
-        <a href="#item-4" class="arrow-prev arrow"></a>
-        <img class="size5" src="./LOGO/CISCO.PNG" alt="" />
-        <a href="#item-1" class="arrow-next arrow"></a>
+        <div class="previous-arrow">
+          <a href="#item-4" class="arrow-prev arrow"></a>
+        </div>
+        <div class="current-image">
+          <img class="size5" src="./LOGO/CUBE.jpg" alt="" />
+        </div>
+        <div class="next-arrow">
+          <a href="#item-1" class="arrow-next arrow"></a>
+        </div>
       </div>
     </div>
   </body>
